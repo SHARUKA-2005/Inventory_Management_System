@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inventory Management System</h1>
+
+    <!-- Add Product Form -->
+    <form id="product-form">
+        <input type="text" id="name" placeholder="Product Name" required>
+        <input type="text" id="description" placeholder="Description">
+        <input type="text" id="supplier" placeholder="Supplier">
+        <input type="number" id="sales" placeholder="Sales" min="0">
+        <input type="number" id="price" placeholder="Price" required min="0">
+        <input type="number" id="quantity" placeholder="Quantity" required min="0">
+        <button type="submit">Add Product</button>
+    </form>
+
+    <!-- Search Product -->
+    <input type="text" id="search-bar" placeholder="Search by product name...">
+    <button id="search-button">Search</button>
+
+    <!-- Product Table -->
+    <table id="product-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Supplier</th>
+                <th>Sales</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Products will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
